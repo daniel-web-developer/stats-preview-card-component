@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background: hsl(233, 47%, 7%);
+}
+
+.flex{
+    display: flex;
+}
+
+.middle{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+.text-main{
+    flex-direction: column;
+}
+
+.text-desktop{
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-right: 115px;
+}
+
+.text-title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(0, 0%, 100%);
+}
+
+.text-paragraph{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: 0px;
+    line-height: 25px;
+}
+
+.list{
+    padding-left: 0px;
+    padding-top: 15px;
+}
+
+.list-elements{
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: hsl(0, 0%, 100%);
+}
+
+.list-text{
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (min-width: 640px){
+    .hide-desktop{
+        display: none;
+    }
+    .card{
+        width: 1055px;
+        height: 425px;
+        background: hsl(244, 38%, 16%);
+        border-radius: 10px;
+    }
+    .image{
+        width: 515px;
+        height: 425px;
+        background: url(./images/image-header-desktop.jpg), hsl(277, 64%, 61%);
+        background-blend-mode: screen;
+        background-size: 515px 425px;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .hide-mobile{
+        display: none;
+    }
+    .card{
+        width: 270px;
+        height: 645px;
+        background: hsl(244, 38%, 16%);
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    .text-paragraph{
+        margin-bottom: 0px;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .image{
+        width: 270px;
+        height: 200px;
+        background: url(./images/image-header-mobile.jpg), hsl(277, 64%, 61%);
+        background-blend-mode: screen;
+        background-size: 270px 200px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .text-title{
+        font-size: 25px;
+        text-align: center;
+    }
+    .text{
+        width: 270px !important;
+    }
+    .vertical{
+        flex-wrap: wrap;
+    }
+    .list{
+        padding-top: 0px !important;
+    }
+    .list-elements{
+        font-size: 20px;
+    }
+    
+    .list-text{
+        font-size: 11px;
+    }
+    .text-desktop{
+        padding-top: 5px;
+        padding-left: 6.775px;
+        text-align: center !important;
+        width: 270px !important;
+        padding-right: 6.775px;
+    }
+}

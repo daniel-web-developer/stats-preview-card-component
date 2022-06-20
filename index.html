@@ -8,26 +8,53 @@
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <div class="flex middle">
+    <div class="flex card">
+      <div class="hide-desktop">
+        <div class="image">
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex text-main text-desktop flex-paragraph">
+          <h1 class="text-title">Get <span style="color: hsl(277, 64%, 61%)">insights</span> that help your business grow.</h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+          <div class="text-paragraph">
+            <h4 class="text-paragraph">Discover the benefits of data<br>analytics and make better decisions regarding revenue, customer<br>experience, and overall efficiency.</h4>
+          </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+          <div class="list hide-mobile">
+            <ul class="flex list list-elements">
+              <li style="padding-right: 25px">10k+ <span class="list-text">COMPANIES</span></li>
+              <li style="padding-right: 25px">314 <span class="list-text">TEMPLATES</span></li>
+              <li>12M+ <span class="list-text">QUERIES</span></li>
+            </ul>
+          </div>
+          <div class="list hide-desktop">
+            <ul style="flex-direction: column;" class="list flex list-elements">
+              <li>10k+ <li><span class="list-text">COMPANIES</span></li></li>
+              <li style="padding-top: 25px">314 <li><span class="list-text">TEMPLATES</span></li></li>
+              <li style="padding-top: 25px">12M+ <li><span class="list-text">QUERIES</span></li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hide-mobile">
+        <div class="image">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Daniel</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
   </div>
 </body>
 </html>
